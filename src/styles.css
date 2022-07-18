@@ -1,0 +1,123 @@
+@font-face {
+    font-family: "burgers1";
+    src: url("./fonts/burgers1.ttf");
+}
+@font-face {
+    font-family: "burgers2";
+    src: url("./fonts/burgers2.ttf");
+}
+@font-face {
+    font-family: "comic";
+    src: url("./fonts/comic.ttf");
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, 
+#content {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    padding: 10px 40px;
+    display: flex;
+    align-items: center;
+    font-family: 'burgers1';
+    background-color: aliceblue;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.123);
+}
+
+.hero {
+    font-size: 4rem;
+    color: red;
+}
+
+.nav-items {
+    margin-left: auto;
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-item {
+    font-size: 2rem;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: red;
+}
+
+.welcome-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../src/images/welcome.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+}
+
+.welcome > h1 {
+    font-family: 'burgers1';
+    font-size: 4rem;
+    letter-spacing: 5px;
+    padding-top: 75px;
+}
+
+.intro {
+    font-family: 'comic';
+    font-weight: bold;
+    font-size: 1.3rem;
+    padding-bottom: 20px;
+}
+
+.bob {
+    height: 200px;
+}
+
+.menu-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../src/images/welcome.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.menu {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-item h2 {
+    font-family: 'burgers1';
+    margin: 20px 0px;
+}
+
+.menu-item p {
+    font-family: 'comic';
+    margin: 0px;
+}
+
+.menu-item img{
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+}
